@@ -1,87 +1,66 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confidentialité - Zayro Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité du bot Discord ZayroTechBoost, projet indépendant de ZayroTech.">
+  <meta name="theme-color" content="#090d1b">
+  <title>Politique de confidentialité — ZayroTechBoost</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <a class="brand" href="index.html">ZAYRO PROFILE</a>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">Z</span> ZAYROTECH</a>
+  <nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="contact.html">Contact</a></nav>
 </header>
+<main class="legal">
+  <span class="eyebrow">INFORMATIONS LÉGALES</span>
+  <h1>Politique de confidentialité</h1>
+  <p class="muted">Dernière mise à jour : 24 novembre 2026</p>
+  <p class="intro">Cette page explique quelles informations peuvent être traitées lorsque vous utilisez le bot Discord ZayroTechBoost ou sa fonction de démarrage de connexion Epic.</p>
 
-<main class="about">
-    <span class="tag">INFORMATIONS LÉGALES</span>
+  <h2>1. Responsable du projet et contact</h2>
+  <p>ZayroTech est l'éditeur indépendant du projet ZayroTechBoost. Pour toute question relative à cette politique ou aux données personnelles, vous pouvez écrire à <a href="mailto:manoa6403@gmail.com">manoa6403@gmail.com</a>.</p>
 
-    <h1>Politique de confidentialité</h1>
+  <h2>2. Services concernés</h2>
+  <p>Cette politique concerne le site d'information <strong>zayrotech.online</strong> et le bot Discord <strong>ZayroTechBoost</strong>. Le bot est exécuté sur l'ordinateur de son éditeur. Discord est utilisé pour fournir les interactions avec les membres. Le site est une page de présentation du projet.</p>
 
-    <p class="muted">Dernière mise à jour : 20 novembre 2026</p>
+  <h2>3. Informations traitées</h2>
+  <p>Lorsqu'un utilisateur déclenche la commande de connexion Epic, le code actuellement examiné :</p>
+  <ul>
+    <li>utilise son identifiant Discord pour associer temporairement la tentative de connexion à cet utilisateur ;</li>
+    <li>peut transmettre le nom d'utilisateur Discord et l'identifiant Discord au webhook configuré par l'éditeur afin de signaler le démarrage de la demande ;</li>
+    <li>crée une valeur technique d'état temporaire pour cette tentative ;</li>
+    <li>écrit des événements techniques dans les journaux locaux du bot.</li>
+  </ul>
+  <p>Le code de connexion examiné ouvre une autorisation Epic, mais ne comprend pas à lui seul le traitement complet du retour OAuth. Cette version ne prétend donc pas récupérer, stocker ou afficher des informations de profil Epic. Si cette fonctionnalité est ajoutée, la présente politique devra être actualisée avant son activation.</p>
 
-    <h2>1. Responsable du projet</h2>
-    <p>
-        Zayro Profile est un projet indépendant.
-        Responsable : [NOM DU RESPONSABLE].
-        Contact : [ADRESSE E-MAIL].
-    </p>
+  <h2>4. Utilisation des informations</h2>
+  <p>Les informations mentionnées ci-dessus servent au fonctionnement technique du bot, à l'association d'une tentative de connexion à l'utilisateur qui l'a initiée, au diagnostic des erreurs et à la sécurité du service. Elles ne sont pas utilisées pour vendre des profils ou établir des profils publicitaires.</p>
 
-    <h2>2. Fonctionnement du site</h2>
-    <p>
-        Cette version du site présente le projet Zayro Profile.
-        La connexion Epic n'est pas encore activée.
-    </p>
+  <h2>5. Stockage et conservation</h2>
+  <p>La valeur d'état de connexion est conservée temporairement en mémoire pendant l'exécution du bot et peut disparaître à l'arrêt du processus ou lorsqu'elle est supprimée par le programme. Les journaux techniques sont enregistrés localement dans les fichiers configurés par l'éditeur ; ils restent présents jusqu'à leur suppression manuelle ou leur remplacement selon la gestion locale des fichiers.</p>
+  <p>Les messages transmis au webhook sont reçus par le service Discord associé à ce webhook et peuvent être conservés dans le canal Discord privé configuré, selon les paramètres et règles de Discord, jusqu'à leur suppression. L'éditeur doit supprimer les journaux et messages qui ne sont plus nécessaires.</p>
 
-    <h2>3. Connexion Epic Games</h2>
-    <p>
-        Le projet prévoit une connexion via le système officiel
-        Epic Account Services, avec l'autorisation de l'utilisateur.
-        La permission envisagée est Basic Profile.
-    </p>
+  <h2>6. Destinataires et prestataires</h2>
+  <ul>
+    <li><strong>Discord :</strong> plateforme utilisée pour le bot, les interactions et le webhook privé qui reçoit les événements de connexion.</li>
+    <li><strong>Epic Games :</strong> si l'utilisateur choisit d'ouvrir le parcours de connexion, il est redirigé vers les pages officielles d'Epic Games. Epic traite alors les informations selon ses propres règles.</li>
+    <li><strong>Hébergement du site :</strong> le site statique est publié via GitHub Pages, qui peut traiter des données techniques de consultation conformément à ses propres conditions.</li>
+  </ul>
+  <p>Le bot est actuellement exécuté sur l'ordinateur de l'éditeur et non sur un hébergeur de bot tiers. Le webhook est configuré par l'éditeur vers un canal Discord privé.</p>
 
-    <p>
-        Zayro Profile ne demande jamais le mot de passe Epic
-        ni les codes de sécurité de l'utilisateur.
-    </p>
+  <h2>7. Sécurité</h2>
+  <p>L'éditeur limite l'accès aux fichiers de configuration, aux journaux locaux et au canal privé recevant les notifications. Les utilisateurs ne doivent jamais communiquer leur mot de passe Epic ou leurs codes de sécurité au bot ou à l'éditeur. La connexion, lorsqu'elle est proposée, doit se faire uniquement sur le site officiel d'Epic Games.</p>
 
-    <h2>4. Données personnelles</h2>
-    <p>
-        Dans cette version, aucune donnée de profil Epic
-        n'est collectée par le site.
-        Si la connexion est activée, cette politique sera
-        mise à jour pour expliquer précisément les données
-        utilisées, leur conservation et leur protection.
-    </p>
+  <h2>8. Vos demandes</h2>
+  <p>Pour poser une question ou demander l'accès, la rectification ou la suppression d'informations personnelles lorsque cela est applicable, contactez l'éditeur à <a href="mailto:manoa6403@gmail.com">manoa6403@gmail.com</a>. Les demandes seront examinées dans les limites des obligations légales et des données effectivement détenues.</p>
 
-    <h2>5. Partage des données</h2>
-    <p>
-        Cette version informative ne transmet pas de données
-        de profil Epic à des tiers.
-    </p>
-
-    <h2>6. Contact</h2>
-    <p>
-        Pour toute question concernant la confidentialité :
-        [ADRESSE E-MAIL].
-    </p>
-
-    <h2>7. Modifications</h2>
-    <p>
-        Cette politique pourra être modifiée si les
-        fonctionnalités du projet évoluent.
-    </p>
-
+  <h2>9. Modifications de cette politique</h2>
+  <p>Cette politique sera mise à jour si le bot commence à récupérer des données de profil Epic, si de nouveaux prestataires sont utilisés ou si les pratiques de conservation changent. La date de mise à jour sera alors modifiée.</p>
+  <p class="legal-note"><strong>Important :</strong> cette politique décrit les éléments du code et de l'organisation qui ont été communiqués pour cette version. L'éditeur doit vérifier que la configuration réelle du webhook, les journaux et les pratiques de suppression correspondent bien à ces informations avant publication.</p>
 </main>
-
-<footer>
-    <span>© 2026 Zayro Profile</span>
-    <a href="index.html">Accueil</a>
-</footer>
-
+<footer class="site-footer"><span>© 2026 ZayroTech — ZayroTechBoost</span><div><a href="index.html">Accueil</a><a href="contact.html">Contact</a></div></footer>
 </body>
 </html>
